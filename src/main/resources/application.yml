@@ -1,0 +1,16 @@
+spring:
+  mvc:
+    view:
+      static-path-pattern: /static/**
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/safebuilder
+    username: root
+    password: sohyun4343
+  servlet:
+    multipart:
+      max-file-size: 128MB
+      max-request-size: 128MB
+      enabled: true

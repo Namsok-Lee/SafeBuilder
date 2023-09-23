@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Plan {
 	
+	private int id;
 	private String site_name;
 	private String business_mgmt_no;
 	private String business_start_no;
@@ -339,6 +340,12 @@ public class Plan {
 	}
 	public void setUpdatedAt(Date updatedAt) {
 		this.updatedAt = updatedAt;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 	
