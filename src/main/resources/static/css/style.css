@@ -5,7 +5,7 @@ body, html {
     width: auto;
     margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: #c4cad0;
+    background-color: #bac0c6;
 }
 
 header {
@@ -313,6 +313,7 @@ section {
 	height: 20%;
 	background-color: skyblue;
 	margin-bottom: 20px;
+	border-radius: 20px;
 }
 
 .calendar-maincontainer .inputBox .inputContent {

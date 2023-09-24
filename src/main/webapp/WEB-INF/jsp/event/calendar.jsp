@@ -35,8 +35,8 @@
 						<div class="calendar" id='calendar'></div>
 					</div>
 					<div class="inputBox">
-						<div class="reportPageLink" onclick="location.href=''/calendar/input'">
-							<input type="button" value="보고서작성 페이지 보기">
+						<div class="reportPageLink">
+							<input type="button" value="보고서작성 페이지 미리보기" onclick="location.href='/calendar/input'">
 						</div>
 						<div class="inputContent">
 							<h3>일정 추가</h3>
