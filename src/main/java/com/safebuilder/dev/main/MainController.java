@@ -20,8 +20,8 @@ public class MainController {
 	@GetMapping("/main")
 	public String listView(Model model) {
 		
-		List<Plan> planList = planBO.getPlanList();
-		model.addAttribute("planList", planList);
+//		List<Plan> planList = planBO.getPlanList();
+//		model.addAttribute("planList", planList);
 		
 		
 		return "main/main";

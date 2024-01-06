@@ -1,14 +1,10 @@
 package com.safebuilder.dev.event;
 
-import java.util.List;
-import java.util.Map;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.safebuilder.dev.event.bo.EventBO;
 
@@ -22,8 +18,8 @@ public class EventController {
 	@RequestMapping
 	public String ViewCalendar(Model model) {
 		
-		List<Map<String, Object>> siteInfoList = eventBO.getSiteInfo();
-		model.addAttribute("siteInfoList", siteInfoList);
+//		List<Map<String, Object>> siteInfoList = eventBO.getSiteInfo();
+//		model.addAttribute("siteInfoList", siteInfoList);
 		
 		return "event/calendar";
 	}
@@ -33,13 +29,13 @@ public class EventController {
 		return "input/input";
 	}
 	
-	@ResponseBody
-	@GetMapping("/insert")
-	public List<Map<String, Object>> View(Model model) {
-		
-		List<Map<String, Object>> siteInfoList = eventBO.getSiteInfo();
-		model.addAttribute("siteInfoList", siteInfoList);
-		
-		return siteInfoList;
-	}
+//	@ResponseBody
+//	@GetMapping("/insert")
+//	public List<Map<String, Object>> View(Model model) {
+//		
+//		List<Map<String, Object>> siteInfoList = eventBO.getSiteInfo();
+//		model.addAttribute("siteInfoList", siteInfoList);
+//		
+//		return siteInfoList;
+//	}
 }
